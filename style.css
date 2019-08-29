@@ -30,7 +30,7 @@ p.description {
   min-height: 100vh;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  
   align-items: center;
   background-image: url("yop.jpg");
   background-size: cover;
@@ -41,7 +41,7 @@ p.description {
 
 
 h1 {
-  background-color: paleturquoise;
+  /* background-color: paleturquoise; */
   padding:30px;
   font-size: 70px;
   font-style: italic;
@@ -51,11 +51,12 @@ h1 {
 }
 
 p {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   padding: 20px;
   border: 80px;
   font-family: 'Roboto',
   sans-serif;
+  justify-items: right;
 
 }
 
