@@ -1,30 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset='utf-8'>
-  <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
-  <title>Your tutor</title>
-  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
-  <link rel='stylesheet' type='text/css' href='style.css'>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-  <!-- <script src='main.js'></script> -->
-  <link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Montserrat|Oswald|Raleway|Roboto&display=swap"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jorge Berenguer Arjona — Full-Stack Software Engineer</title>
+  <meta name="description"
+    content="Full-stack software engineer building web, mobile and crypto-payment products with React, Next.js, NestJS and Django.">
+  <meta name="theme-color" content="#07080b">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='5' fill='%23daa520'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23daa520' stroke-width='1.5' opacity='.5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="myheader">Natalie Armitage</h1>
-    <p class="description"><strong>I am a French and Spanish teacher</strong> with over seven years experience.<br>
-      I can help you <strong>succeed</strong> in your study of modern foreing languages.<br>
-      I can help you enjoy and start becoming fluent in both French and Spanish.</p>
-    <div class="wrapper">
-      <button class="button">Get in touch!</button>
-    </div>
-    <h2 class="1classes"> 1-to-1 classes // group classes </h2>
-    <!-- <h2 class="group">  </h2> -->
-  </div>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <header class="top">
+    <a href="#top" class="mark">JBA<span class="cursor">_</span></a>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#experience">log</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Jorge Berenguer Arjona</h1>
+      <p class="role">Full-Stack Software Engineer<span class="cursor">_</span></p>
+      <p class="lead">I build things for the web — and I'm endlessly curious about how they work, why
+        they break, and what they could become next.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">view projects</a>
+        <a class="btn ghost" href="#contact">open a channel</a>
+      </div>
+      <p class="coords">Alicante (Spain) · remote · UTC+1/+2</p>
+    </section>
+
+    <section id="about">
+      <h2><span>01</span> about</h2>
+      <div class="cols">
+        <p>I'm a full-stack engineer with a path that didn't start in software: I was an acoustic engineer, then a
+          secondary-school Spanish teacher in the UK, before settling into code. That mix shows up in how I work — I
+          like explaining things clearly, listening to what people actually need, and turning that into something that
+          works well, delights the users and solves real problems.</p>
+        <p>Since 2021 I've worked remotely on product teams, from a no-code platform to a production crypto-payments
+          ecosystem: React and Next.js on the front, NestJS and Django behind them, and React Native when it needs to
+          live on a phone. These days I also work heavily with AI-assisted and agentic development to move faster
+          without lowering the bar.</p>
+      </div>
+      <ul class="facts">
+        <li><b>12</b><span>apps shipped on one production platform</span></li>
+        <li><b>4+</b><span>years building remotely</span></li>
+        <li><b>2</b><span>languages: Spanish (native), English (fluent)</span></li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2><span>02</span> mission log</h2>
+      <ol class="log">
+        <li>
+          <time>Jan 2024 — now</time>
+          <h3>Full-Stack Software Engineer <em>@ Dreams Ai Ltd</em></h3>
+          <ul>
+            <li>Delivered features across 12 applications — React Native mobile wallet, Chrome (MV3) extension, multiple
+              React web apps and NestJS backends — on a production crypto-payments platform over two years.</li>
+            <li>Engineered a cross-platform iOS and Android app with React Expo, and migrated the mobile code base from
+              Ionic to Expo.</li>
+            <li>Built a cryptocurrency payment ecosystem with Next.js and NestJS, architecting both the interfaces and
+              the frontend–backend communication.</li>
+          </ul>
+        </li>
+        <li>
+          <time>Sep 2021 — Sep 2023</time>
+          <h3>Full-Stack Product Engineer <em>@ Stacker Ltd</em></h3>
+          <ul>
+            <li>Developed a no-code platform for building applications on top of Airtable or Google Sheets as databases.
+            </li>
+            <li>Implemented complex React front-end features and scalable Django / PostgreSQL backend services.</li>
+            <li>Bridged product and engineering by turning user requirements into technical specs for the REST API.</li>
+          </ul>
+        </li>
+        <li class="earlier">
+          <time>Before code</time>
+          <h3>Other trajectories</h3>
+          <ul>
+            <li>Customer Support Agent, Incsub Inc (2020–2021)</li>
+            <li>Secondary School Teacher, Spanish, Queensbury School, UK (2017–2019)</li>
+            <li>Acoustic Engineer, Nova Acoustics Ltd, UK (2014–2016)</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2><span>03</span> instruments</h2>
+      <dl class="skills">
+        <div>
+          <dt>languages</dt>
+          <dd><i>TypeScript</i><i>JavaScript (ES6+)</i><i>Python</i><i>HTML5</i><i>CSS3</i></dd>
+        </div>
+        <div>
+          <dt>frameworks</dt>
+          <dd><i>React</i><i>Next.js</i><i>React Native (Expo,
+              Ionic)</i><i>Redux</i><i>Node.js</i><i>NestJS</i><i>Django</i><i>DRF</i><i>TailwindCSS</i></dd>
+        </div>
+        <div>
+          <dt>data</dt>
+          <dd><i>PostgreSQL</i><i>MongoDB</i></dd>
+        </div>
+        <div>
+          <dt>tools</dt>
+          <dd><i>Git</i><i>Docker</i><i>Claude</i><i>Codex</i></dd>
+        </div>
+        <div>
+          <dt>practice</dt>
+          <dd><i>REST APIs</i><i>AI-assisted development</i><i>Agentic development</i><i>Automated testing</i></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="projects">
+      <h2><span>04</span> projects</h2>
+      <p class="note">Signals incoming. Coordinates will be added soon.</p>
+      <div class="grid">
+        <!-- Replace each placeholder card with:
+        <a class="card" href="URL" target="_blank" rel="noopener">
+          <span class="id">PRJ-001</span>
+          <h3>Project name</h3>
+          <p>One-line description.</p>
+          <span class="tags">React · Node</span>
+        </a> -->
+        <a class="card pending" href="#projects" aria-disabled="true">
+          <span class="id">PRJ-001</span>
+          <h3>Unknown signal</h3>
+          <p>Project details pending.</p>
+          <span class="tags">[ link: tbd ]</span>
+        </a>
+        <a class="card pending" href="#projects" aria-disabled="true">
+          <span class="id">PRJ-002</span>
+          <h3>Unknown signal</h3>
+          <p>Project details pending.</p>
+          <span class="tags">[ link: tbd ]</span>
+        </a>
+        <a class="card pending" href="#projects" aria-disabled="true">
+          <span class="id">PRJ-003</span>
+          <h3>Unknown signal</h3>
+          <p>Project details pending.</p>
+          <span class="tags">[ link: tbd ]</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><span>05</span> contact</h2>
+      <p class="lead">Hiring, collaborating, or just curious about something? Open a channel.</p>
+      <ul class="links">
+        <li><a href="mailto:jorge.beren@gmail.com">jorge.beren@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/jorge-berenguer-22b95237" target="_blank"
+            rel="noopener">linkedin.com/in/jorge-berenguer-22b95237</a></li>
+      </ul>
+      <p class="edu">Education — B.Eng. Mechanical Engineering, Universidad Miguel Hernández (2010–2015) · PGCE, Leeds
+        Trinity University (2016–2017)</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year">2026</span> Jorge Berenguer Arjona
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
