@@ -58,7 +58,7 @@ h1 { font-size: clamp(2rem, 7vw, 3.6rem); line-height: 1.1; font-weight: 700; co
 .btn:hover, .btn:focus-visible { background: var(--gold); color: #000; }
 .btn.ghost { border-color: var(--line); color: var(--fg); }
 .btn.ghost:hover { border-color: var(--gold); background: transparent; color: var(--gold); }
-.coords { margin-top: 3rem; font-size: .75rem; color: var(--dim); letter-spacing: .1em; }
+.coords { margin-top: 3rem; font-size: .9rem; color: var(--dim); letter-spacing: .1em; }
 
 /* sections */
 section { padding: 4rem 0; border-top: 1px solid var(--line); }
@@ -127,7 +127,9 @@ section h2 span { color: var(--gold); margin-right: .75rem; font-weight: 300; }
   padding: .15rem 0; overflow-wrap: anywhere; transition: border-color .2s;
 }
 .links a:hover { border-color: var(--gold); }
-.edu { margin-top: 2.5rem; font-size: .78rem; color: var(--dim); }
+.edu { margin-top: 2.5rem; }
+.edu .edu-main { font-size: 1.2rem; line-height: 1.4; color: var(--fg); }
+.edu .edu-sub { font-size: .78rem; color: var(--dim); margin-top: .5rem; }
 
 footer {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem;
@@ -138,7 +140,9 @@ footer {
 a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 @media (max-width: 520px) {
-  .top nav { gap: .8rem; font-size: .72rem; }
+  .top { flex-wrap: wrap; gap: .25rem 1rem; }
+  .top nav { flex-wrap: wrap; gap: .1rem .8rem; font-size: .72rem; }
+  .top nav > * { white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -146,3 +150,8 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
   .cursor { animation: none; }
   .card { transition: none; }
 }
+
+/* language switch */
+.lang { color: var(--dim); }
+.lang b { color: var(--gold); font-weight: 500; }
+.lang a:hover { color: var(--gold); }
